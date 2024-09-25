@@ -267,27 +267,28 @@ main{
     background: none;
     text-align: center;
     font-weight: 250;
+    color: black;
 }
 .html{
-    background: #264653;
+    background: white;
 }
 .css{
-    background: #2A9D8F;
+    background: #f462f0;
 }
 .js{
-    background: #E9C46A;
+    background: #fffb39;
 }
 .java{
-    background: #F4A261;
+    background: #1ee45e;
 }
 .py{
     background: #E76F51;
 }
 .c{
-    background: #EC8C74;
+    background: #6c39ff;
 }
 .cplus{
-    background: #F0A390;
+    background: #39ffee;
 }
 /* ---------- main [skills] ---------- */
 
@@ -300,6 +301,13 @@ main{
     margin-right: 50px;
     margin-left: 50px;
     border: 1px solid white;
+}
+.projects h2, .projects p{
+    font-weight: 300;
+    margin-left: 50px;
+}
+.projects h2{
+    font-size: 55px;
 }
 
 
