@@ -83,10 +83,15 @@ main{
     padding-top: 100px;
     overflow-x: hidden;
 }
+.section{
+    display: inline-block;
+}
 /* ---------- main [home] ----------*/
 .home{
     width: 90%;
     height: 80vh;
+    padding-top: 30px;
+    margin-bottom: 60px;
 }
 .tag-stack{
     position: relative;
@@ -99,7 +104,8 @@ main{
     font-size: 25px;
     padding-top: 3px; padding-bottom: 3px;
     padding-left: 20px; padding-right: 20px;
-    border: 1px solid white;
+    border: none;
+    color: black;
     border-radius: 10rem;
 
     /* position: absolute; */
@@ -124,43 +130,95 @@ main{
 .tag:nth-child(5) { transform: translate(220px, 60px) rotate(-10deg); }
 .tag:nth-child(6) { transform: translate(280px, 90px) rotate(-8deg); }
 .tag:nth-child(7) { transform: translate(330px, 100px) rotate(15deg); }
+
+.portfolio{
+    background: rgb(245,155,59);
+    background: radial-gradient(circle, rgba(245,155,59,1) 0%, rgba(248,216,169,1) 100%);
+}
+.frontend{
+    background: rgb(59,245,82);
+    background: radial-gradient(circle, rgba(59,245,82,1) 0%, rgba(216,248,169,1) 100%);
+}
+.young{
+    background: rgb(249,145,145);
+    background: radial-gradient(circle, rgba(249,145,145,1) 0%, rgba(248,216,169,1) 100%);
+}
+.backend{
+    background: rgb(238,174,174);
+    background: radial-gradient(circle, rgba(238,174,174,1) 0%, rgba(236,242,65,1) 100%);
+}
+.positive{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(179,107,242,1) 100%);
+}
+.data-ai{
+    background: rgb(36,146,237);
+    background: radial-gradient(circle, rgba(36,146,237,1) 0%, rgba(65,242,239,1) 100%);
+}
+.jane{
+    background: rgb(1,10,18);
+    background: radial-gradient(circle, rgba(1,10,18,1) 0%, rgba(80,75,75,1) 100%);
+    color: white;
+}
+.giphy-embed{
+    display: block;
+    margin: 0;
+    padding: 0; padding-left: 150px; padding-top: 100px;
+    width: 100%;
+}
 /* ---------- main [home] ---------- */
 
 
 /* ---------- main [about] ---------- */
+.about{
+    background-color: #dbf26e;
+    background-image: linear-gradient(319deg, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);
+    padding-bottom: 50px;
+}
 .about h2{
     text-align: center;
     font-weight: 400;
     font-size: 60px;
+    background: none;
+    color: black;
 }
 .container{
     display: flex;
-    /* align-items: flex-start;
-    justify-content: space-between;
-    align-content: center;
-     */
+    background: none;
 }
 .column{
     flex: 33.3%;
     padding: 10px; padding-left: 30px;
 	margin: 5px;
+    background: none;
 }
 .column h3{
     font-weight: 400;
-    border: 2px solid rgb(252, 153, 61);
+    border: none;
     border-radius: 10rem;
     text-align: center;
     padding-top: 3px; padding-bottom: 3px;
-    background-color: rgb(252, 153, 61);
+    background: rgb(255,251,57);
+    background: linear-gradient(0deg, rgba(255,251,57,1) 0%, rgba(238,240,150,1) 100%);
     color: black;
 }
 .about img{
     width: 90%;
     border-radius: 10rem;
 }
-.column li{
+.column p, ul {
+    background: none;
+    color: black;
+}
+.column ul li{
     font-weight: 200;
     padding-bottom: 20px;
+    background: none;
+    color: black;
+}
+.column ul li b, span{
+    background: none;
+    color: black;
 }
 /* ---------- main [about] ---------- */
 
@@ -168,9 +226,94 @@ main{
 
 
 /* ---------- main [skills] ---------- */
+.cardS{
+    display: flex;
+    padding-top: 300px;
+    /* padding-bottom: 300px; */
+    justify-content: space-evenly;
+    
+}
 
+.card{
+    display: flex;
+    justify-content: center;   
 
+    position: relative;
+    width: 170px;
+    height: 200px;
+    perspective: 1000px;
+}
+.card-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.card:hover .card-inner{
+    transform: rotateY(-180deg);
+}
+.card-front, .card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.card-front h2, .card-back p{
+    background: none;
+    text-align: center;
+    font-weight: 250;
+}
+.html{
+    background: #264653;
+}
+.css{
+    background: #2A9D8F;
+}
+.js{
+    background: #E9C46A;
+}
+.java{
+    background: #F4A261;
+}
+.py{
+    background: #E76F51;
+}
+.c{
+    background: #EC8C74;
+}
+.cplus{
+    background: #F0A390;
+}
 /* ---------- main [skills] ---------- */
+
+
+
+
+/* ---------- main [projects] ---------- */
+.hr-p{
+    margin-top: 300px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 1px solid white;
+}
+
+
+
+/* ---------- main [projects] ---------- */
+
+
+
+
+/* ---------- main [contact] ---------- */
+
+/* ---------- main [contact] ---------- */
+
+
 
 
 
@@ -180,7 +323,6 @@ footer{
     font-weight: 180;
     text-align: center;
 }
-
 /* ---------- footer ---------- */
 
 
