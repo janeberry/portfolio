@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{ 
+    font-family: 'Poppins', 'sans-serif';
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* ---------- header ---------- */
+header{
+    position: fixed;
+
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    
+    margin: 0; top: 0; left: 0; right: 0;
+    padding: 10px;
+    width: 100%;
+    
+
+    font-size: 17px;
+    font-weight: 300;
+
+    z-index: 100;
+    background-color: black;
+    color: white;
+}
+    /* nav - left */
+    .logo{
+        align-content: center;
+        font-size: 30px;
+        font-weight: 400;
+        padding-left: 10px;
+    }
+    .logo span{
+        color: rgb(17, 250, 76);
+    }
+    /* nav - center */
+    .nav li{ 
+        list-style: none;
+        display: inline;
+        padding-left: 25px;
+    }
+    .nav a{ 
+        text-decoration: none;
+        color: white;
+    }
+    .nav a:hover{
+        font-weight: 550;
+    }
+    /* nav - right */
+    .nav-contact li{
+        list-style: none;
+        display: inline;
+        padding-right: 30px;
+    }
+    .nav-contact a{ 
+        text-decoration: none;
+    }
+    .nav-contact a:hover{
+        background-color: rgb(163, 247, 185);
+        border: solid rgb(163, 247, 185);
+        color: black;
+    }
+    .nav-contact a {
+        border: 2px solid rgb(17, 250, 76);
+        border-radius: 10rem;
+        padding-top: 3px; padding-bottom: 3px;
+        padding-right: 18px; padding-left: 18px;
+
+        background-color: rgb(17, 250, 76);
+        color: black;
+    }
+
+/* ---------- header ---------- */
+
+
+
+
+main{
+    padding-top: 100px;
+    overflow-x: hidden;
+}
+/* ---------- main [home] ----------*/
+.home{
+    width: 90%;
+    height: 80vh;
+}
+.tag-stack{
+    position: relative;
+}
+.tag{
+    list-style: none;
+    display: inline-block;
+    
+    font-weight: 100;
+    font-size: 25px;
+    padding-top: 3px; padding-bottom: 3px;
+    padding-left: 20px; padding-right: 20px;
+    border: 1px solid white;
+    border-radius: 10rem;
+
+    /* position: absolute; */
+    transition: transform 0.5s ease;
+}
+
+.tag:before {
+    content: '';
+    /* position: absolute; */
+    width: 10px;
+    height: 10px;
+    background-color: var(--color);
+    border-radius: 50%;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+}
+.tag:nth-child(1) { transform: translate(20px, 90px) rotate(-15deg); }
+.tag:nth-child(2) { transform: translate(60px, 30px) rotate(10deg); }
+.tag:nth-child(3) { transform: translate(110px, 0) rotate(-5deg); }
+.tag:nth-child(4) { transform: translate(170px, 30px) rotate(5deg); }
+.tag:nth-child(5) { transform: translate(220px, 60px) rotate(-10deg); }
+.tag:nth-child(6) { transform: translate(280px, 90px) rotate(-8deg); }
+.tag:nth-child(7) { transform: translate(330px, 100px) rotate(15deg); }
+/* ---------- main [home] ---------- */
+
+
+/* ---------- main [about] ---------- */
+.about h2{
+    text-align: center;
+    font-weight: 400;
+    font-size: 60px;
+}
+.container{
+    display: flex;
+    /* align-items: flex-start;
+    justify-content: space-between;
+    align-content: center;
+     */
+}
+.column{
+    flex: 33.3%;
+    padding: 10px; padding-left: 30px;
+	margin: 5px;
+}
+.column h3{
+    font-weight: 400;
+    border: 2px solid rgb(252, 153, 61);
+    border-radius: 10rem;
+    text-align: center;
+    padding-top: 3px; padding-bottom: 3px;
+    background-color: rgb(252, 153, 61);
+    color: black;
+}
+.about img{
+    width: 90%;
+    border-radius: 10rem;
+}
+.column li{
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+/* ---------- main [about] ---------- */
+
+
+
+
+/* ---------- main [skills] ---------- */
+
+
+/* ---------- main [skills] ---------- */
+
+
+
+/* ---------- footer ---------- */
+footer{
+    padding-top: 30px;
+    font-weight: 180;
+    text-align: center;
+}
+
+/* ---------- footer ---------- */
+
+
+
+
